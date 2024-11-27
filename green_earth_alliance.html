@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>HelpHub - Green Earth Alliance</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo">HelpHub</div>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="charities.html">Charities</a>
+      </nav>
+    </header>
+
+    <!-- Charity Details -->
+    <section class="charity-profile">
+      <h2>Green Earth Alliance</h2>
+      <p>
+        Committed to environmental conservation through tree planting and
+        clean-up drives.
+      </p>
+      <p>Location: 4044 N Lincoln Ave #121, Chicago, IL 60618</p>
+      <p>Contact: greenearth@example.com</p>
+      <button id="volunteer-button">Volunteer Now</button>
+
+      <div id="volunteer-form" style="display: none">
+        <h3>Sign Up to Volunteer</h3>
+        <input type="text" placeholder="Your Name" class="form-input" />
+        <input type="email" placeholder="Your Email" class="form-input" />
+        <button id="submit-volunteer">Submit</button>
+      </div>
+    </section>
+    <section
+      id="weather-info"
+      style="
+        margin-top: 20px;
+        padding: 10px;
+        background-color: #f9f9f9;
+        border: 1px solid #ddd;
+        border-radius: 6px;
+      "
+    >
+      <!-- Weather data will be dynamically inserted here -->
+    </section>
+    <script>
+      var currentLocation = (document.body.dataset.location = "Chicago,US");
+    </script>
+    <script src="charity_profile.js"></script>
+  </body>
+</html>

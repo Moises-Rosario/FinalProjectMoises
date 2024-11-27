@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>HelpHub - Food for All Foundation</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo">HelpHub</div>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="charities.html">Charities</a>
+      </nav>
+    </header>
+
+    <!-- Charity Details -->
+    <section class="charity-profile">
+      <h2>Food for All Foundation</h2>
+      <p>
+        Food for All Foundation is dedicated to eradicating hunger by providing
+        meals to those in need.
+      </p>
+      <p>Location: 2101 Vandiver Dr, Columbia, MO 65202</p>
+      <p>Contact: foodforall@example.com</p>
+
+      <button id="volunteer-button">Volunteer Now</button>
+
+      <div id="volunteer-form" style="display: none">
+        <h3>Sign Up to Volunteer</h3>
+        <input type="text" placeholder="Your Name" class="form-input" />
+        <input type="email" placeholder="Your Email" class="form-input" />
+        <button id="submit-volunteer">Submit</button>
+      </div>
+    </section>
+    <section
+      id="weather-info"
+      style="
+        margin-top: 20px;
+        padding: 10px;
+        background-color: #f9f9f9;
+        border: 1px solid #ddd;
+        border-radius: 6px;
+      "
+    >
+      <!-- Weather data will be dynamically inserted here -->
+    </section>
+    <script>
+      var currentLocation = "Columbia,MO,US";
+    </script>
+    <script src="charity_profile.js"></script>
+  </body>
+</html>
